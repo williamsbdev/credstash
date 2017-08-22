@@ -535,6 +535,8 @@ def get_session(aws_access_key_id=None, aws_secret_access_key=None,
                                                     aws_session_token=aws_session_token,
                                                     profile_name=profile_name)
     return get_session._cached_session
+
+
 get_session._cached_session = None
 
 
@@ -825,6 +827,7 @@ def main():
             return
     else:
         parsers['super'].print_help()
+
 
 if __name__ == '__main__':
     main()
