@@ -1,8 +1,9 @@
-import unittest
+from unittest import TestCase
+
 from credstash import expand_wildcard
 
 
-class TestExpandingWildcard(unittest.TestCase):
+class TestExpandingWildcard(TestCase):
     secrets_set = ["a", "b", "ab", " a", " b",
                    "ba", "abc", "a[anyvalue]z", "a b", "aabb"]
     secrets_set2 = ["QQQ", "QVQQ", "QVQVQ",

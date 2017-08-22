@@ -1,8 +1,9 @@
-import unittest
+from unittest import TestCase
+
 from credstash import paddedInt
 
 
-class TestPadLeft(unittest.TestCase):
+class TestPadLeft(TestCase):
     def test_zero(self):
         i = 0
         self.assertEqual(paddedInt(i), "0" * 19)
